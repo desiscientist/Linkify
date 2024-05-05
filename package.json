@@ -1,0 +1,23 @@
+{
+  "name": "url_short",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "nodemon": "^3.1.0",
+    "pg": "^8.11.5",
+    "shortid": "^2.2.16",
+    "ua-parser-js": "^1.0.37"
+  },
+  "devDependencies": {
+    "morgan": "^1.10.0"
+  }
+}
