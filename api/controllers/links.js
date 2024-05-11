@@ -45,11 +45,11 @@ async function getUrl (req, res){
         values: [url.clicks + 1, shortID]
     }
     await client.query(updateClickQuery);
-    // res.redirect(url["full_url"]);
-    res.json({
-        "shortID" : req.params.shortID,
-        "url": url["full_url"]
-    });
+    res.redirect(url["full_url"]);
+    //res.json({
+     //   "shortID" : req.params.shortID,
+       // "url": url["full_url"]
+   // });
 }
 
 module.exports = {
