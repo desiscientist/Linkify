@@ -16,7 +16,6 @@ async function fn (req, res){
         values: [shortID]
     };
     const clicks = await client.query(getClicksQuery);
-    
     const resObj = {
         shortId: shortID,
         url: url.full_url,
