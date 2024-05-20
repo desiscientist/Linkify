@@ -12,7 +12,7 @@ async function fn (req, res){
         "url": "main Page Url"
     });
     const getClicksQuery = {
-        text: "SELECT created_at AS timestamp FROM click_table WHERE short_id = $1",
+        text: "SELECT created_at AS timestamp, country, browser FROM click_table WHERE short_id = $1",
         values: [shortID]
     };
     const clicks = await client.query(getClicksQuery);
